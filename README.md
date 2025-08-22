@@ -20,7 +20,7 @@ Aplicativo Android simples desenvolvido em **Kotlin** com **Jetpack Compose** pa
 - **Kotlin**  
 - **Jetpack Compose**  
 - **Android Studio**  
-- **Material3**  
+- **Material3** (tema e componentes)
 
 ## 🖼 Layout do App
 
@@ -33,12 +33,7 @@ Aplicativo Android simples desenvolvido em **Kotlin** com **Jetpack Compose** pa
 ## 🚀 Como Usar
 
 1. Clone o repositório:  
-   git clone 
+   git clone https://github.com/Felipewv93/Calculadora-IMC.git
 2. Abra o projeto no **Android Studio**
 3. Execute o app em um **emulador** ou **dispositivo físico**
 4. Insira seu **peso** e **altura** e clique em **Calcular IMC**
-
-## 📝 Observações
-
-- A função `classificarIMC` define a **categoria do IMC**
-- Atualmente o **resultado** é exibido na própria tela após o cálculo
