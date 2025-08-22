@@ -24,8 +24,7 @@ Aplicativo Android simples desenvolvido em **Kotlin** com **Jetpack Compose** pa
 
 ## 🖼 Layout do App
 
-- Tela única com:  
-  - **Título:** “Calculadora de IMC”  
+- Tela única com:
   - **Campos de texto** para peso e altura  
   - **Botão** para calcular o IMC  
   - **Área** para exibir o resultado e a classificação  
