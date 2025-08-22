@@ -23,14 +23,12 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-// CalculadoraIMCScreen()
+                    CalculadoraIMCScreen()
                 }
             }
         }
     }
 }
-
-
 
 @Composable
 fun CalculadoraIMCScreen() {
@@ -44,7 +42,6 @@ fun CalculadoraIMCScreen() {
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        //Dentro da Column inserir:
         Text(
             text = "Calculadora de IMC",
             fontSize = 24.sp,
@@ -70,7 +67,7 @@ fun CalculadoraIMCScreen() {
             onClick = {
                 if (peso.isNotEmpty() && altura.isNotEmpty()) {
                     val imc = peso.toFloat() / (altura.toFloat() * altura.toFloat())
-//resultado = "Seu IMC: %.2f \n%s".format(imc, classificarIMC(imc))
+                    resultado = "Seu IMC: %.2f \n%s".format(imc, classificarIMC(imc))
                 } else {
                     resultado = "Preencha todos os campos!"
                 }
@@ -91,9 +88,6 @@ fun CalculadoraIMCScreen() {
     }
 }
 
-//Copie e cole acima do Preview
-
-// Observação descomentar o “resultado” do slide anterior
 private fun classificarIMC(imc: Float): String {
     return when {
         imc < 18.5 -> "Abaixo do peso"
