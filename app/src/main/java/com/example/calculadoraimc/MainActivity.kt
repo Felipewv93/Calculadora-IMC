@@ -133,7 +133,7 @@ fun CalculadoraIMCScreen() {
                     fontWeight = FontWeight.Medium
                 )
             }
-        } // fim coluna botões
+        }
 
         Spacer(modifier = Modifier.height(55.dp))
         OutlinedTextField(
@@ -286,7 +286,7 @@ fun CalculadoraIMCScreen() {
                 )
             }
         }
-    } //fim da coluna principal
+    }
 }
 
 private fun classificarIMC(imc: Double): String {
@@ -308,6 +308,7 @@ private fun corIMC(classificacao: String): Color {
         else -> Color(0xFFF44336)
     }
 }
+
 @Preview(showBackground = true)
 @Composable
 fun PreviewCalculadoraIMC() {
